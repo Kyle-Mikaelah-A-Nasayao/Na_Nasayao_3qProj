@@ -1,0 +1,341 @@
+/*Removes all borders, margins, and paddings from the html tag*/
+html {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*Sets the margins, paddings, font proterties, and bgcolor of the body tag*/
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-family: DM Sans;
+  font-size: 19px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  background-color: #f3decd;
+}
+
+/*Sets the paddings and font size of the header*/
+header {
+  padding: 0px;
+  font-size: 0px;
+}
+
+/*Styles the nav bar's margins, paddings, bgcolor, position, and layer*/
+nav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  background-color: #848c42;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/*Sets the list style types of all ul in the nav to none*/
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*Sets the display, text color, and text properties of all the a tags in the nav bar*/
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*Sets the bgcolor and text color when an a tag in the nav bar is selected*/
+nav a::selection {
+  background-color: white;
+  color: black;
+}
+
+/*Sets the bgcolor and text color when an h1, p, img, a, or li tag is selected*/
+h1::selection, p::selection, img::selection, a::selection, li::selection {
+  background-color: black;
+  color: white;
+}
+
+/*Sets the bgcolor when a br tag is selected*/
+br::selection {
+  background-color: #fdf9f6;
+}
+
+/*Styles the padding for all a tags in the class nav-items*/
+.nav-items {
+  padding: 22px 22px;
+}
+
+/*Styles the padding and floats the nav-logo*/
+.nav-logo {
+  padding-top: 8px;
+  float: left;
+}
+
+/*Makes everything in the class nav-left float left*/
+.nav-left {
+  float: left;
+}
+
+/*Makes everything in the class nav-right float right*/
+.nav-right {
+  float: right;
+}
+
+/*Styles the bgcolor when you hover over the nav-items class*/
+.nav-items:hover {
+  background-color: #556b2f;
+}
+
+/*Styles the bgcolor of the login class*/
+.login {
+  background-color: #030302;
+}
+
+/*Sets the padding and bgcolor of the content class*/
+.content {
+  padding: 80px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fdf9f6;
+}
+
+/*Styles everything in the content-float class float right*/
+.content-float {
+  display: inline-block;
+}
+
+/*Sets the text properties and margin of all h1 tags in the content class*/
+.content h1 {
+  letter-spacing: 1.2px;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/*Sets the text decoration and text color of all a tags in the classes link and contact-ul*/
+.link a, .contact-ul a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Styles the padding and width of the login-intro class*/
+.login-intro {
+  padding: 30px;
+  width: 46%;
+}
+
+/*Styles everything in the login-info class*/
+.login-info {
+  width: 46%;
+  float: right;
+  border: 2px solid #556b2f;
+  border-radius: 25px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+/*Sets the padding of the info-p class*/
+.info-p {
+  padding: 30px;
+}
+
+/*Sets the margin of the u-p class*/
+.u-p {
+  margin-bottom: 0px;
+}
+
+/*Sets the background color of the text-input class when in focus*/
+.text-input:focus {
+  background-color: #fdf9f6;
+}
+
+/*Styles everything in the info-h class*/
+.info-h {
+  background-color: #556b2f;
+  color: #fdf9f6;
+  border: 2px solid #556b2f;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+/*Styles everything in the info-button class*/
+.info-button {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #556b2f;
+  color: #fdf9f6;
+  border-color: #556b2f;
+  margin-top: 20px;
+}
+
+/*Styles the font and color of text in the error class*/
+.error {
+  font-size: 15px;
+  font-style: italic;
+  color: crimson;
+}
+
+/*Styles the font, color, and decoration of text in the error class*/
+.forgor {
+  text-decoration: none;
+  font-style: italic;
+  font-size: 12px;
+  color:#b75431;
+}
+
+/*Styles the class underline's height, width, margins, and sets it to have a gradient background with animation and transformation*/
+.underline {
+  background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 4s ease infinite;
+  height: 5px;
+  width: 130px;
+  margin-bottom: 40px;
+  transform: skew(-30deg);
+}
+
+/*Customizes the animation*/
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*Styles the footer's paddings, bgcolor, text properties, and position*/
+footer {
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-bottom: 45px;
+  background-color: #b75431;
+  color: white;
+  position: relative;
+  font-size: 15px;
+}
+
+/*Sets the text decoration for all a tags in the footer*/
+footer a {
+  text-decoration: none;
+}
+
+/*Sets the bgcolor when a br tag in the footer is selected*/
+footer br::selection {
+  background-color: #b75431;
+}
+
+/*Sets the class f-heading's font properties*/
+.f-heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*Styles the class f-bottom's padding and text properties*/
+.f-bottom {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 9px;
+}
+
+/*Sets the margin in all p tags in the class f-bottom*/
+.f-bottom p {
+  margin-bottom: 3px;
+}
+
+/*Sets the position of the class f-logo*/
+.f-logo {
+  position: absolute;
+  left: 46%;
+}
+
+/*Styles the class f-left to float left*/
+.f-left {
+  float: left;
+}
+
+/*Sets the padding for the class f-leftorg*/
+.f-leftorg {
+  padding-left: 60px;
+}
+
+/*Sets the text properties and float of the class f-link*/
+.f-link {
+  float: right;
+  color: white;
+  text-align: right;
+}
+
+/*Sets the bgcolor, padding, and text properties of all a tags in the class f-link*/
+.f-link a {
+  color: #b75431;
+  background-color: white;
+  padding: 6px;
+}
+
+/*Sets the bgcolor and text color of all a tags in the class f-link when hovered over*/
+.f-link a:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+/*Styles the padding and margin of all p tags in the footer*/
+footer p {
+  padding-left: 9px;
+  margin-bottom: 0;
+}
+
+/*Sets the margin for the class sprites*/
+.sprites {
+  margin: -30px;
+}
+
+/*Sets the opacity of the class sprites when hovered over*/
+.sprites:hover {
+  opacity: 0.5;
+}
+
+/*Styles the position and size of the class sprite1*/
+.sprite1 {
+  background: url('../images/socmed-sprites.png') no-repeat -43px -29px;
+  width: 111px;
+  height: 116px;
+  transform: scale(.3);
+}
+
+/*Styles the position and size of the class sprite2*/
+.sprite2 {
+  background: url('../images/socmed-sprites.png') no-repeat -189px -29px;
+  width: 111px;
+  height: 116px;
+  transform: scale(.3);
+}
+
+/*Styles the position and size of the class sprite3*/
+.sprite3 {
+  background: url('../images/socmed-sprites.png') no-repeat -189px -194px;
+  width: 111px;
+  height: 115px;
+  transform: scale(.3);
+}
+
+/*Styles the position and size of the class sprite4*/
+.sprite4 {
+  background: url('../images/socmed-sprites.png') no-repeat -43px -194px;
+  width: 111px;
+  height: 115px;
+  transform: scale(.3);
+}
