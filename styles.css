@@ -310,7 +310,7 @@ footer p {
 
 /*Styles the position and size of the class sprite1*/
 .sprite1 {
-  background: url('../images/socmed-sprites.png') no-repeat -43px -29px;
+  background: url('images/socmed-sprites.png') no-repeat -43px -29px;
   width: 111px;
   height: 116px;
   transform: scale(.3);
@@ -318,7 +318,7 @@ footer p {
 
 /*Styles the position and size of the class sprite2*/
 .sprite2 {
-  background: url('../images/socmed-sprites.png') no-repeat -189px -29px;
+  background: url('images/socmed-sprites.png') no-repeat -189px -29px;
   width: 111px;
   height: 116px;
   transform: scale(.3);
@@ -326,7 +326,7 @@ footer p {
 
 /*Styles the position and size of the class sprite3*/
 .sprite3 {
-  background: url('../images/socmed-sprites.png') no-repeat -189px -194px;
+  background: url('images/socmed-sprites.png') no-repeat -189px -194px;
   width: 111px;
   height: 115px;
   transform: scale(.3);
@@ -334,7 +334,7 @@ footer p {
 
 /*Styles the position and size of the class sprite4*/
 .sprite4 {
-  background: url('../images/socmed-sprites.png') no-repeat -43px -194px;
+  background: url('images/socmed-sprites.png') no-repeat -43px -194px;
   width: 111px;
   height: 115px;
   transform: scale(.3);
